@@ -6,9 +6,8 @@ missing person reports (with photo), a first-aid medical guide, and a
 profile with medical info — built to work **fully offline**, with a small
 backend that only handles account login/signup.
 
-The **Disaster** module from the original prototype has been excluded, as
-requested. Camera-based AI detection (fall/gesture recognition, CCTV
-integration) is intentionally **not implemented yet** — the Camera screen
+Camera-based AI detection (fall/gesture recognition, CCTV
+integration) — the Camera screen
 gives a real, working camera preview and is structured so that module can be
 plugged in later without reworking the app.
 
