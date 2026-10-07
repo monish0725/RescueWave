@@ -1,4 +1,4 @@
-# RescueWave — National Safety Platform (Mobile App + Backend)
+# RescueWave — A Smarter Way To Save (Mobile App + Backend)
 
 A personal safety companion app: Emergency SOS, emergency contacts, nearby
 hospitals/police/fire stations, alert history, a notification center,
