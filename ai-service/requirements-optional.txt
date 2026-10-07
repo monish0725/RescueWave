@@ -1,0 +1,15 @@
+# Voice keyword detection (vosk). Also needs a downloaded Vosk model — see
+# VOSK_MODEL_PATH in .env.example and the README.
+vosk>=0.3.45
+sounddevice>=0.4
+
+# Emotion classification. Also needs a pre-trained Keras model file — see
+# EMOTION_MODEL_PATH in .env.example and the README. This package alone is
+# a large download (100s of MB); only install it if you actually have a
+# trained model to point at.
+# Keep these compatible with mediapipe 0.10.x and InsightFace's ONNX import.
+tensorflow==2.16.2
+protobuf>=4.25.3,<5
+onnx>=1.16,<1.17
+scikit-learn>=1.4
+pandas>=2.2

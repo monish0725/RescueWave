@@ -1,0 +1,7 @@
+.venv/
+.venv-test/
+__pycache__/
+*.pyc
+.env
+*.h5
+vosk-model-*/

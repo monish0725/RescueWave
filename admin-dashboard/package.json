@@ -1,0 +1,33 @@
+{
+  "name": "rescuewave-admin-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "leaflet": "^1.9.4",
+    "leaflet.heat": "^0.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.18.1",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/leaflet": "^1.9.21",
+    "@types/leaflet.heat": "^0.2.5",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.0"
+  }
+}

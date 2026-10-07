@@ -1,0 +1,44 @@
+# RescueWave — root .gitignore
+# Each subproject also has its own more specific .gitignore; this catches
+# patterns that show up in more than one of them (backend/mobile/
+# admin-dashboard/ai-service) so nothing slips through at the root level.
+
+# Dependencies
+node_modules/
+mobile 2/
+
+# Environment files — real credentials live here, never in .env.example
+.env
+.env.local
+.env.*.local
+
+# Runtime SQLite database + WAL/SHM files (dev data, not source)
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.matplotlib-cache/
+.ultralytics/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# OS/editor cruft
+.DS_Store
+*.log
+~$*.docx
+*.gitignore 2
+
+# Generated AI/demo snapshots
+fall-detection/fall_detected.jpg

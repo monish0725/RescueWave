@@ -1,0 +1,21 @@
+node_modules/
+
+# Real credentials (JWT secret, SMTP/Twilio if configured) — never commit
+.env
+
+# Runtime SQLite database + WAL/SHM files — this is dev/local data, not
+# source. If `rescuewave.db` currently shows up as tracked in `git status`
+# after adding this, run `git rm --cached rescuewave.db*` once to stop
+# tracking it — adding it here only affects future changes, not what's
+# already committed.
+*.db
+*.db-wal
+*.db-shm
+
+# User-uploaded evidence (photos/videos/voice notes, missing-person
+# photos, camera match snapshots) — local disk storage, not source.
+# Keep the folder itself tracked via uploads/.gitkeep.
+uploads/*
+!uploads/.gitkeep
+
+*.log

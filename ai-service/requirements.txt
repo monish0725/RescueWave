@@ -1,0 +1,24 @@
+# Core — required for face matching + gesture SOS detection (the two
+# modules that actually run by default).
+opencv-contrib-python==4.10.0.84   # frame I/O, drawing, and Haar cascade used by the optional emotion module
+numpy>=1.26,<3
+requests>=2.31
+python-dotenv>=1.0
+mediapipe==0.10.14                  # pinned: newer 0.10.2x+/1.x releases removed the legacy `solutions.hands`
+                                      # API this module uses in favor of the Tasks API — verified 0.10.14 still has it
+
+# Face matching (missing persons) — SCRFD detection + ArcFace (buffalo_l)
+# recognition via InsightFace. First run downloads the buffalo_l model pack
+# (~330MB, from a GitHub Release, not Git LFS) to ~/.insightface/ — needs
+# real internet access once; cached after that.
+insightface==1.0.1                  # version actually validated during development — detection, embedding,
+                                      # and JPEG-recompression robustness all confirmed working at this version
+onnxruntime>=1.18                   # CPU inference backend for the above; swap for onnxruntime-gpu if you have a CUDA GPU
+
+# Fall/posture detection — YOLO person detector using the local
+# fall-detection/yolo11n.pt model file.
+ultralytics>=8.3,<9
+
+# Optional — install requirements-optional.txt only if you want voice
+# and/or emotion detection too (see README). The service runs fine
+# without them; those two sub-detectors just report "disabled".

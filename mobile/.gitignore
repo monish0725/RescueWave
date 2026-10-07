@@ -1,0 +1,21 @@
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Native build output (only present after a prebuild/EAS build)
+ios/
+android/
+
+# Env files, if you ever add one here
+.env
+.env.local
+
+*.log
+.DS_Store
+
+# Metro bundler cache
+.metro-health-check*

@@ -1,0 +1,109 @@
+{
+  "expo": {
+    "name": "RescueWave",
+    "slug": "rescuewave",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/rescuewave-app-icon-2026.png",
+    "scheme": "rescuewave",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/rescuewave-splash-2026.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rescuewave.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "RescueWave needs your location to raise accurate SOS alerts and find nearby hospitals, police and fire stations.",
+        "NSLocationAlwaysUsageDescription": "RescueWave keeps sharing your live location with an emergency contact, Helper, or Authority while the app is in the background.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "RescueWave keeps sharing your live location with an emergency contact, or while you're responding as a Helper, even when the app is in the background.",
+        "UIBackgroundModes": [
+          "location"
+        ],
+        "NSCameraUsageDescription": "RescueWave needs camera access to take photos — for missing-person reports, incident reports, your profile photo — and for the camera preview screen.",
+        "NSPhotoLibraryUsageDescription": "RescueWave needs photo library access to attach a photo when reporting a missing person.",
+        "NSMicrophoneUsageDescription": "RescueWave needs microphone access to record voice notes when reporting an incident."
+      }
+    },
+    "android": {
+      "package": "com.rescuewave.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/rescuewave-adaptive-icon-2026.png",
+        "backgroundColor": "#0B1E45"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "SEND_SMS",
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "RescueWave needs your location to raise accurate SOS alerts and find nearby help.",
+          "locationAlwaysAndWhenInUsePermission": "RescueWave keeps sharing your live location with an emergency contact, or while responding as a Helper, even when the app is in the background.",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "RescueWave needs camera access to take photos for missing-person and incident reports, your profile photo, and camera previews."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "RescueWave needs photo library access to attach missing person photos."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#0B1E45"
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "RescueWave needs microphone access to record voice notes when reporting an incident."
+        }
+      ],
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/rescuewave-splash-2026.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF",
+          "dark": {
+            "image": "./assets/rescuewave-splash-2026.png",
+            "backgroundColor": "#FFFFFF"
+          }
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}

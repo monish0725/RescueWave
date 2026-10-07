@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1E45;
+  --color-navy-deep: #071433;
+  --color-navy-light: #16295E;
+  --color-navy-mist: #EAF0FB;
+  --color-crimson: #E11D3C;
+  --color-crimson-deep: #B0102B;
+  --color-crimson-mist: #FDEBEE;
+  --color-amber: #F59E0B;
+  --color-amber-mist: #FEF3E0;
+  --color-teal: #0D9488;
+  --color-teal-mist: #E3F6F4;
+  --color-gold: #D4AF37;
+  --color-gold-mist: #FBF3DD;
+  --color-blue: #2563EB;
+  --color-blue-mist: #EAF1FE;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F3F5FA] text-[#0F172A] font-body antialiased;
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
